@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>input요소</title>
+  </head>
+  <body>
+    <form>
+      <input tabindex="1" type="text" required />
+      <input tabindex="-1" type="file" multiple name="file_selection" />
+      <input
+        tabindex="0"
+        type="number"
+        step="5"
+        placeholder="숫자만 입력해주세요"
+      />
+      <input tabindex="2" type="checkbox" checked />
+      <input tabindex="-1" type="submit" value="전송" />
+    </form>
+
+    <form>
+      <!--label의 for속성과 input요소의 id 값을 동일하게 설정하고 la
+    bel요소를 클릭하면 자동으로 input태그에 초점이 맞추어 진다.-->
+      <label>이름
+        <input type="text" name="name" id="name" />
+      </label>
+    </form>
+  </body>
+</html>
